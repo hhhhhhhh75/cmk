@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cascade Mountain Kennels</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,700,0,200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+<script src="script.js">
+</script>
+<nav>
+	<a class="logo" id="logo" href="index.html">CASCADE<br> MOUNTAIN <br>KENNELS</a>
+	<div class="links">
+		<div class="dropdown">
+			<a style="padding-right:5px;">Our Dogs <span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links">
+				<a href="puppies.html">Our Puppies</a>
+				<a href="litters.html">Our Litters</a>
+				<a href="champions.html">Our Champions</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a style="padding-right:5px;">Information<span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links">
+				<a href="faq.html">FAQ</a>
+				<a href="boarding.html">Boarding</a>
+				<a href="bernese.html">Bernese</a>
+			</div>
+		</div>
+		<a href="adoption.html">Adoption</a>		
+		<a href="testimonials.html">Testimonials</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<a class="hamburger" id="hamburger" onclick="toggleMenuOn()"><span class="material-symbols-outlined" style="color:white;font-size:52px;position:absolute;top:0px;right:3px;">menu</span></a>
+	
+	<div id="side-menu">
+	<div>
+		<a class="hamburger" onclick="toggleMenuOff()"><span style="color:white;font-size:52px;position:absolute;top:0px;right:0px;" class="material-symbols-outlined">close</span></a>
+		<div class="dropdown" id="d1" style="padding:0;justify-content:flex-start;display:flex;flex-direction:column;" onclick="toggleDropdown(this)">
+			<a style="padding-right:5px;justify-content:flex-start;">Our Dogs <span style="padding:0px 5px 0px 5px;justify-content:flex-start;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links" style="position:relative;display:none;flex-direction:column;justify-content:flex-start;align-items:flex-start;" id="dl1">
+				<a style="font-size:35px;padding:0;" href="puppies.html">Our Puppies</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a style="font-size:35px;padding:0;" href="litters.html">Our Litters</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a style="font-size:35px;padding:0;" href="champions.html">Our Champions</a>
+			</div>
+		</div>
+		<hr style="width:100%; opacity:0.2;">
+		<div class="dropdown" id="d2" style="padding:0;justify-content:flex-start;display:flex;flex-direction:column;" onclick="toggleDropdown(this)">
+			<a style="padding-right:5px;">Information<span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links" style="position:relative;" id="dl2">
+			
+				<a href="faq.html" style="font-size:35px;padding:0;">FAQs</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a href="boarding.html" style="font-size:35px;padding:0;">Boarding</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a href="bernese.html" style="font-size:35px;padding:0;">Bernese</a>
+			</div>
+		</div>
+		<hr style="width:100%; opacity:0.2;">
+		<a href="adoption.html">Adoption</a>
+		<hr style="width:100%; opacity:0.2;">
+	
+	
+		<a href="testimonials.html">Testimonials</a>
+		<hr style="width:100%; opacity:0.2;">
+		<a href="contact.html">Contact</a>
+	</div>
+	</div>
+</nav>
+<div class="page-header" style="background-image:url('images/image0.jpeg'); background-position:0% 75%;">
+	<h1>Boarding</h1>
+</div>
+
+
+
+</body>
+</html>

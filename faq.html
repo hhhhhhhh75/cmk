@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cascade Mountain Kennels</title>
+<link rel="stylesheet" type="text/css" href="stylesheet.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20,700,0,200" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+<script src="script.js">
+</script>
+<nav>
+	<a class="logo" id="logo" href="index.html">CASCADE<br> MOUNTAIN <br>KENNELS</a>
+	<div class="links">
+		<div class="dropdown">
+			<a style="padding-right:5px;">Our Dogs <span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links">
+				<a href="puppies.html">Our Puppies</a>
+				<a href="litters.html">Our Litters</a>
+				<a href="champions.html">Our Champions</a>
+			</div>
+		</div>
+		<div class="dropdown">
+			<a style="padding-right:5px;">Information<span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links">
+				<a href="faq.html">FAQ</a>
+				<a href="boarding.html">Boarding</a>
+				<a href="bernese.html">Bernese</a>
+			</div>
+		</div>
+		<a href="adoption.html">Adoption</a>		
+		<a href="testimonials.html">Testimonials</a>
+		<a href="contact.html">Contact</a>
+	</div>
+	<a class="hamburger" id="hamburger" onclick="toggleMenuOn()"><span class="material-symbols-outlined" style="color:white;font-size:52px;position:absolute;top:0px;right:3px;">menu</span></a>
+	
+	<div id="side-menu">
+	<div>
+		<a class="hamburger" onclick="toggleMenuOff()"><span style="color:white;font-size:52px;position:absolute;top:0px;right:0px;" class="material-symbols-outlined">close</span></a>
+		<div class="dropdown" id="d1" style="padding:0;justify-content:flex-start;display:flex;flex-direction:column;" onclick="toggleDropdown(this)">
+			<a style="padding-right:5px;justify-content:flex-start;">Our Dogs <span style="padding:0px 5px 0px 5px;justify-content:flex-start;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links" style="position:relative;display:none;flex-direction:column;justify-content:flex-start;align-items:flex-start;" id="dl1">
+				<a style="font-size:35px;padding:0;" href="puppies.html">Our Puppies</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a style="font-size:35px;padding:0;" href="litters.html">Our Litters</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a style="font-size:35px;padding:0;" href="champions.html">Our Champions</a>
+			</div>
+		</div>
+		<hr style="width:100%; opacity:0.2;">
+		<div class="dropdown" id="d2" style="padding:0;justify-content:flex-start;display:flex;flex-direction:column;" onclick="toggleDropdown(this)">
+			<a style="padding-right:5px;">Information<span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links" style="position:relative;" id="dl2">
+			
+				<a href="faq.html" style="font-size:35px;padding:0;">FAQs</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a href="boarding.html" style="font-size:35px;padding:0;">Boarding</a>
+				<hr style="width:100%; opacity:0.2;">
+				<a href="bernese.html" style="font-size:35px;padding:0;">Bernese</a>
+			</div>
+		</div>
+		<hr style="width:100%; opacity:0.2;">
+		<a href="adoption.html">Adoption</a>
+		<hr style="width:100%; opacity:0.2;">
+	
+	
+		<a href="testimonials.html">Testimonials</a>
+		<hr style="width:100%; opacity:0.2;">
+		<a href="contact.html">Contact</a>
+	</div>
+	</div>
+</nav>
+<div class="page-header faq" style="background-image:url('images/bernese1.jpg'); background-position:25% 87%; background-size:100%; background-repeat:repeat;">
+	<h1 >FAQs</h1>
+</div>
+<div class="main-content">
+	<div class="faq-wrapper">
+	<div class="question-column">
+		<div class="question" onclick="answer(this)" id="question1">
+			<div class="question-info">
+				<h2>Is a Bernese Mountain Dog right for me?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>Please read about <a href="bernese.html">BMD's</a> on our website. There are also many websites that discuss how to find the right breed for you and we recommend doing some research before committing to any breed of dog.</p>
+			</div>
+		</div>
+		
+		<div class="question" onclick="answer(this)" id="question2">
+			<div class="question-info">
+				<h2>What are the first steps in adopting a Bernese Mountain Dog puppy?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>Please fill out an adoption form on our website and include as much detail as possible
+about yourself and what you are looking for in a dog. This will help us determine if you
+are suitable candidates for one of our puppies. It will also help us decide which Bernese
+Mountain Dog puppy is a good match for you. If you have not heard of us within 3 days,
+please e-mail or phone, as sometimes the adoption forms can go missing. We require a
+$250 non-refundable deposit to reserve your puppy.</p>
+			</div>
+		</div>
+		
+		<div class="question" onclick="answer(this)" id="question3">
+			<div class="question-info">
+				<h2>How does the Bernese Mountain Dog puppy selection work?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>We use the information that you have filled out on your adoption form, so please include
+lots of details when telling us about your lifestyle, puppy preferences etc. We will send
+out pictures at about 3 and 8 weeks of age of all the puppies. At about 7-8 weeks of
+age, we temperament test each of our Bernese Mountain Dog puppies and profile them.
+Then we go back to the adoption forms to make the best match for each person. The
+puppies go home at about 9 weeks of age.</p>
+			</div>
+		</div>
+		
+		<div class="question" onclick="answer(this)" id="question4">
+			<div class="question-info">
+				<h2>Does the Bernese Mountain Dog puppy need to be spayed or neutered?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>Yes, the Bernese Mountain puppies will need to be spayed or neutered. We
+recommend doing it around 8 months of age. We are willing to work with your vet if they
+have a different age in mind. If you would like to show/breed we do make exceptions.
+We look at each case individually.</p>
+			</div>
+		</div>
+		<div class="question" onclick="answer(this)" id="question5">
+			<div class="question-info">
+				<h2>What does the Bernese Mountain Dog puppy need to cross the border or fly?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>Our vet will give the puppy a thorough health exam. He will then issue a health
+certificate, along with an international health certificate. We will also provide an official
+invoice with receipt of payment. This is all the puppy needs to cross the border if the
+puppy is flying to his new home.</p>
+			</div>
+		</div>
+	</div>
+	<div class="question-column">
+	
+		
+		<div class="question" onclick="answer(this)" id="question6">
+			<div class="question-info">
+				<h2>Do we need to keep in touch with the families that adopt our Bernese Mountain Dogs puppies?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>We love to keep in touch with the families that adopt a puppy from us! We appreciate
+getting updates and pictures. In fact, we ask that you send us pictures of your dog at
+four months, eight months, and one year along with their weight at each age. We can
+then let you know how your Bernese Mountain Dog pup is doing in comparison to the
+rest of the litter. Also, if you ever have any questions we want you to feel free to email or
+phone us.</p>
+			</div>
+		</div>
+		
+		<div class="question" onclick="answer(this)" id="question7">
+			<div class="question-info">
+				<h2>Does my Bernese Mountain Puppy need pet health insurance?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>We strongly recommend pet health insurance for your Bernese Mountain Dog puppy.
+There are many different insurance providers so we encourage you to do some
+research to see which provider is best for you.</p>
+			</div>
+		</div>
+		
+		<div class="question" onclick="answer(this)" id="question8">
+			<div class="question-info">
+				<h2>Do we have a contract and health guarantee?</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>Yes, we have a contract that we require to be filled out when you pick up your Bernese
+Mountain Dog puppy. We want any potential owner of one of our dogs to have a
+positive experience with the breed and our kennel, therefore we are committed to our
+dogs and stand behind our Bernese Mountain Dog puppies. We guarantee that our
+puppies will be in good health and will have received all relevant vaccines. They will be
+treated against internal and external parasites. The Bernese Mountain Dog puppies will
+have health certifications from the vet and will be microchipped. We also guarantee the
+health of our Bernese Mountain Dogs for up to18 months of age for any congenial or
+hereditary conditions. Please contact us if you would like to view our guarantee and
+contract.</p>
+			</div>
+		</div>
+		<div class="question" onclick="answer(this)" id="question9">
+			<div class="question-info">
+				<h2>Helpful Resources</h2>
+				<span class="material-symbols-outlined">add</span>
+			</div>
+			<div class="answer" id="answer">
+				<p>There are many different books available to read and there are many different opinions
+about how raise your puppy. Our suggestion is to do your research and then take what
+resonates with you and leave the rest. If you do have any questions about a particular
+issue, please feel free to contact us.<br><br>Resources we recommend:
+<br><br>“The Bernese and Other Mountain Dogs: A Complete Pet Owners Manual” by Gerd
+Ludwig
+<br><br>“The Dog Listener” by Jan Fennell
+<br><br>“Culture Class” by Jean Donaldson
+<br><br>“How to Raise a Puppy You Can Live With” by Clarice Rutherford and David Neal
+<br><br>“Childproofing Your Dog: A Complete Guide to Preparing Your Dog for the Children in
+Your Life” by Sarah Wilson and Brian Kilcommons
+<br><br>“Mastering Leadership Series Vol. 6: Raising the Perfect Puppy” (NTSC-DVD) Cesar
+Milan</p>
+			</div>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+</body>
+</html>
