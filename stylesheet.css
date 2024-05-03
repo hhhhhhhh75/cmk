@@ -258,7 +258,16 @@ justify-content:space-between;
 .text-left {
 	padding-left:50px;
 }
+.box-button {
+	margin-top:10px;
+	
+}
+.box-link {
+	width:500px;
+	padding:15px;
+	border:solid 2px white;
 
+}
 
 ul {
 	padding-left: 20px;
@@ -598,6 +607,13 @@ textarea {
 	height:450px;
 }
 
+.box-wrapper {
+	display:flex;
+	flex-wrap:wrap;
+	flex-direction:row;
+	gap:50px;
+}
+
 #test1img1 {
 	display:flex;
 }
@@ -619,6 +635,7 @@ textarea {
 	width:calc(50% - 7.5px);
 	gap:20px;
 }
+
 }
 
 @media only screen and (max-width: 1000px) {
@@ -726,6 +743,14 @@ height:500px;
 
 
 @media only screen and (max-width: 700px) {
+	
+	.box-wrapper {
+		gap:20px;
+	}
+	
+	.box-link {
+			width:calc(100% - 35px);
+	}
 	
 	.champions-row {
 		gap:20px;

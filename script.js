@@ -197,14 +197,11 @@ function testSlideshow(s, num){
 	var current = "";
 	var change = parseInt(num);
 	
-	if (num === 1 && current === imgs[imgs.length-1]){
-		num = 0;
-	}
+
 	
-	for (let i = 0; i < imgs.length; i++){
+	for (let i = 0; i < 2; i++){
 		if(imgs[i].style.display === "flex"){
-			alert(imgs[i + change].src);
-			alert(imgs[i + change].style.display);
+			console.log(imgs[i].src);
 			imgs[i + change].style.display = "flex";
 			imgs[i].style.display = "none";
 			
