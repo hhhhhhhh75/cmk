@@ -194,25 +194,32 @@ function testSlideshow(s, num){
 	const element = document.getElementById(s);
 	const imgs = element.querySelectorAll("img");
 	const slideshow = document.getElementById(s);
-	var current = "";
+	var currents = element.querySelectorAll("p");
+	var current = parseInt(currents[0].innerHTML);
 	var change = parseInt(num);
 	
 
+	current = current + change;
 	
-	for (let i = 0; i < 2; i++){
-		if(imgs[i].style.display === "flex"){
-			console.log(imgs[i].src);
-			imgs[i + change].style.display = "flex";
-			imgs[i].style.display = "none";
-			
-			
+	if (current < 0){
+		current = 0;
+	}
+	if (current > imgs.length-1){
+		current = imgs.length-1;
+	}
+
+	
+	for (let i = 0; i < imgs.length; i++){
+		if(i === current){
+			imgs[i].style.display="flex";
 		}
 		else {
-			imgs[i].style.display = "none";
+			imgs[i].style.display="none";
 		}
 	}
 	
 		
 	
-	
+
+	currents[0].innerHTML = current;
 }
