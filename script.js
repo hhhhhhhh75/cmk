@@ -132,13 +132,15 @@ function answer(s) {
 
 function toggleMenuOn(){
 	document.getElementById("side-menu").style.display="flex";
-
+	document.body.style.overflowY = "hidden"
 	document.getElementById("side-menu").style.marginRight="0px";
 }
 
 function toggleMenuOff(){
 	document.getElementById("side-menu").style.display="flex";
+	document.body.style.overflowY = "auto"
 	document.getElementById("side-menu").style.marginRight="-100%";
+
 	
 	const drop2 = document.getElementById("dl2");
 	const d = document.getElementById("d2")
