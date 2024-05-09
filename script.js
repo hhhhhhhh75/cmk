@@ -210,7 +210,6 @@ function testSlideshow(s, num){
 		current = imgs.length-1;
 	}
 
-	
 	for (let i = 0; i < imgs.length; i++){
 		if(i === current){
 			imgs[i].style.display="flex";

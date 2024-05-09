@@ -23,9 +23,27 @@ nav {
 }
 
 .dropdown a{
+	
 	display:flex;
 	justify-content:center;
 	align-items:center;
+}
+
+#dropdown-link {
+
+	margin:25px 20px 20px 20px;
+	display:flex;
+	align-items:center;
+background-color:rgba(0, 0, 0, 0);
+transition:all 0.2s;
+}
+
+#dropdown-links a:hover{
+
+}
+
+.dropdown a:hover {
+	text-decoration:none;
 }
 
 .dropdown-links {
@@ -36,31 +54,50 @@ nav {
 	position:absolute;
 }
 
-.dropdown-links a {
+.dropdown-links a{
 	font-family:Bask;
-	padding-top:10px;
-
+	padding-top:0px;
+	padding:0px;
+	
 }
 
 
 .links a {
+	font-size:30px;
 	text-decoration:none;
-	color:rgba(255, 255, 255, 0.85);
+	color:white;
+	/*
 	transition:all 0.2s;
+	margin-bottom:18px;
+	margin-left:13px;
+	padding-left:5px;
+	margin-right:13px;
+	padding-right:5px;
+	padding-top:20px;
+	border-bottom:solid 12px rgba(0, 0, 0, 0);
+	*/
+	display:flex;
+	align-items:flex-end;
+	padding-left:5px;
+	padding-right:5px;
+	margin:35px 15px 20px 15px;
+	height:20px;
+	background-color:rgba(0, 0, 0, 0);
 }
 
 .links a:hover {
-	text-decoration:none;
-	color:rgba(255, 255, 255, 1);
 	transition:all 0.2s;
+	background-color:rgba(0, 0, 0, 0.6);
 }
 
 .dropdown:hover span{
 	content:"arrow_drop_down";
 	transform: rotate(180deg);
 	transition: all 0.2s;
+	text-decoration: none;
 }
 .dropdown span {
+	text-decoration:none;
 	transform: rotate(0deg);
 	transition: all 0.2s;
 }
@@ -69,10 +106,6 @@ nav {
 	display:flex;
 }
 
-.links a {
-	font-size:30px;
-	padding: 20px 20px 13px 20px;
-}
 .dropdown-links{
 	display:none;
 }
@@ -322,7 +355,7 @@ li{
 
 p {
 	padding:5px 0px;
-	font-size:21px;
+	font-size:23px;
 	margin:0;
 	font-family: Bask;
 	color:white;
@@ -366,7 +399,7 @@ input {
 	font-family:Bask;
 	font-size:20px;
 	padding:10px;
-	border-radius:6px 0px 6px 0px;
+
 	border:solid 2px #d6d6d6;
 	
 }
@@ -379,7 +412,6 @@ textarea {
 	font-family:Bask;
 	font-size:20px;
 	padding:10px;
-	border-radius:6px 0px 6px 0px;
 	border:solid 2px #d6d6d6;
 	resize: none;
 	
@@ -476,10 +508,10 @@ textarea {
 }
 
 .testimonial {
-	padding:15px;
+
 	height:100%;
 	display:flex;
-	flex-direction:column;
+	flex-direction:column-reverse;
 	max-width:30%;
 	border:solid 3px white;
 	border-radius:0px;
@@ -489,7 +521,19 @@ textarea {
 	display:flex;
 	flex-direction:column;
 	align-items:center;
-	padding-bottom:10px;
+	padding:15px;
+
+}
+
+.testimonial-info p {
+	padding:0px;
+}
+
+.testimonial-info h1 {
+	font-family:Bask;
+	line-height:0px;
+	font-size:140px;
+	font-weight:normal;
 }
 
 .testimonial img {
@@ -559,6 +603,7 @@ textarea {
 
 .puppy-info{
 	width:50%;
+	padding:15px
 }
 
 .puppy-slides p{
@@ -584,6 +629,10 @@ textarea {
 .test-arrows span:hover {
 	cursor:pointer;
 	}
+
+.test-slides p {
+	display:none;
+}
 
 .test-slides {
 	width:100%;
@@ -611,7 +660,7 @@ textarea {
 }
 
 .puppy {
-	padding:10px;
+
 	border:solid 2px white;
 	width:100%;
 	display:flex;
@@ -642,7 +691,7 @@ textarea {
 	}
 	
 	nav {
-	width:calc(100% - 385px);
+	width:calc(100% - 410px);
 	}
 	.question-column {
 	display:flex;
@@ -743,6 +792,7 @@ textarea {
 	flex-direction:row;
 	gap:50px;
 	flex-wrap:wrap;
+	flex-grow:1;
 }
 
 .champion h2 {
@@ -753,7 +803,7 @@ textarea {
 display:flex;
 flex-direction:column;
 align-items:center;
-
+flex-grow:1;
 height:500px;
 
 }
@@ -856,6 +906,7 @@ height:500px;
 	  display:flex;
 	  flex-wrap:wrap;
 	  height:100%;
+	  width:calc(100% - 3px);
   }
   
   .puppy-slides {
