@@ -12,10 +12,10 @@
 <script src="script.js">
 </script>
 <nav>
-	<a class="logo" id="logo" href="index.html"><img src="images/logo.png" height="50px"></a>
+	<a class="logo" id="logo" href="index.html"><img src="images/logo.png"></a>
 	<div class="links">
 		<div class="dropdown">
-			<a style="padding-right:5px;">Our Dogs <span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<a style="padding-right:5px;" id="dropdown-link">Our Dogs <span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
 			<div class="dropdown-links">
 				<a href="puppies.html">Our Puppies</a>
 				<a href="litters.html">Our Litters</a>
@@ -23,9 +23,9 @@
 			</div>
 		</div>
 		<div class="dropdown">
-			<a style="padding-right:5px;">Information<span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
-			<div class="dropdown-links">
-				<a href="faq.html">FAQ</a>
+			<a style="padding-right:5px;" id="dropdown-link">Information<span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
+			<div class="dropdown-links" id="dropdown-links">
+				<a href="faq.html">FAQs</a>
 				<a href="boarding.html">Boarding</a>
 				<a href="bernese.html">Bernese</a>
 			</div>
@@ -84,7 +84,7 @@
 			</div>
 	</div>
 		<div class="contact-form">
-			<form>
+			<form method="post" action="form.php">
 				<div class="name" style="display:flex;flex-direction:row;;width:100%;justify-content:space-between;">
 					<div style="display:flex;flex-direction:column;width:calc(50% - 7.5px)">
 						<label for="fname">First Name</label>
@@ -92,27 +92,28 @@
 					</div>
 					<div style="display:flex;flex-direction:column;width:calc(50% - 7.5px)">
 						<label for="fname">Last Name</label>
-						<input type="text" id="fname" name="fname" placeholder="Doe">
+						<input type="text" id="lname" name="lname" placeholder="Doe">
 					</div>
 				</div>
 				<div style="display:flex;flex-direction:column;">
-					<label for="fname">Address</label>
-					<input type="text" id="fname" name="fname" placeholder="1234 Street Rd.">
+					<label for="address">Address</label>
+					<input type="text" id="address" name="address" autocomplete="street-address" placeholder="1234 Street Rd.">
 				</div>
 				<div class="contacts" style="display:flex;flex-direction:row;;width:100%;justify-content:space-between;">
 					<div style="display:flex;flex-direction:column;width:calc(50% - 7.5px)">
 						<label for="fname">Phone Number</label>
-						<input type="text" id="fname" name="fname" placeholder="123-456-7890">
+						<input type="text" id="phone" name="phone" autocomplete="tel" placeholder="123-456-7890">
 					</div>
 					<div style="display:flex;flex-direction:column;width:calc(50% - 7.5px)">
 						<label for="fname">Email</label>
-						<input type="text" id="fname" name="fname" placeholder="johndoe@website.ca">
+						<input type="text" id="email" name="email" placeholder="johndoe@website.ca">
 					</div>
 				</div>
 				<div style="display:flex;flex-direction:column;">
 					<label for="fname">About You</label>
 					<textarea id="about" name="about" rows="6" placeholder="Eg. My name is John Doe. I have wanted a dog since I was a child..."></textarea>
 				</div>
+				<input type="submit" >
 			</form>
 		</div>
 </div>

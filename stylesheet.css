@@ -83,9 +83,11 @@ transition:all 0.2s;
 	margin:35px 15px 20px 15px;
 	height:20px;
 	background-color:rgba(0, 0, 0, 0);
+	
 }
 
 .links a:hover {
+	
 	transition:all 0.2s;
 	background-color:rgba(0, 0, 0, 0.6);
 }
@@ -503,16 +505,18 @@ textarea {
 .testimonial-wrapper {
 	display:flex;
 	flex-direction:row;
+	flex-wrap:wrap;
 	gap:50px;
 	padding:50px;
 }
 
 .testimonial {
-
+	width:550px;
+	flex-grow:1;
 	height:100%;
 	display:flex;
 	flex-direction:column-reverse;
-	max-width:30%;
+
 	border:solid 3px white;
 	border-radius:0px;
 }
@@ -612,7 +616,7 @@ textarea {
 
 .test-arrows {
 	width:100%;
-	max-width:30%;
+	max-width:550px;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
@@ -951,6 +955,18 @@ height:500px;
   
  .s {
 	 flex-wrap:wrap-reverse;
+ }
+ .testimonial-wrapper {
+	 padding:20px;
+	 gap:20px;
+ }
+ 
+ .test-arrows {
+	width:calc(100% - 40px);
+ }
+ 
+ .test-slides, .testimonial img {
+	 height:300px;
  }
 }
 
