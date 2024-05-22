@@ -12,6 +12,7 @@ nav {
 	background-color:transparent;
 	display:flex;
 	flex-direction:row;
+
 	justify-content:space-between;
 	z-index:2;
 
@@ -689,6 +690,31 @@ textarea {
 	display:none;
 }
 
+
+.testimonial-column {
+	display:flex;
+	flex-direction:column;	
+	height:100%;
+	gap:50px;
+	flex-grow:1;
+}
+
+.bar {
+	transition:all 0.3s;
+	margin:8px;
+	margin-right:0px;
+	z-index:5;
+	display:block;
+	width:40px;
+	height:2px;
+
+	background-color:white;
+}
+
+#hamburger-wrapper{
+	display:none;
+}
+
 @media only screen and (min-width: 1001px) {
 	.slide-info {
 		width:75%;
@@ -711,9 +737,9 @@ textarea {
 }
 
 @media only screen and (max-width: 1000px) {
-  .hamburger {
-	display:flex;
-  }
+  #hamburger-wrapper{
+	display:block;
+}
   
   	.logo img {
 		height:50px;
@@ -825,7 +851,15 @@ height:500px;
 	margin-top:10px;
 	font-size:18px;
 }
+	.testimonial-column {
+		width:100%;
+		gap:20px;
+	}
 	
+	.testimonial {
+		width:100%;
+		box-sizing: border-box;
+	}
 	
 	.box-wrapper {
 		gap:20px;

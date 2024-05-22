@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body onload='document.getElementById("test1img1").style.display="flex";document.getElementById("test2img1").style.display="flex"'>
+<body onload='document.getElementById("test1img1").style.display="flex";document.getElementById("test2img1").style.display="flex";document.getElementById("test4img1").style.display="flex"'>
 <script src="script.js">
 </script>
 <nav>
@@ -34,11 +34,14 @@
 		<a href="testimonials.html">Testimonials</a>
 		<a href="contact.html">Contact</a>
 	</div>
-	<a class="hamburger" id="hamburger" onclick="toggleMenuOn()"><span class="material-symbols-outlined" style="color:white;font-size:52px;position:absolute;top:0px;right:3px;">menu</span></a>
 	
+	<div id="hamburger-wrapper" onclick="xAnimation();toggleMenu()" style="z-index: 20; right:20px; position:absolute;align-self:center;">
+		<span class="bar" id="bar1"></span>
+		<span class="bar" id="bar2"></span>
+		<span class="bar" id="bar3"></span>
+	</div>
 	<div id="side-menu">
 	<div>
-		<a class="hamburger" onclick="toggleMenuOff()"><span style="color:white;font-size:52px;position:absolute;top:0px;right:0px;" class="material-symbols-outlined">close</span></a>
 		<div class="dropdown" id="d1" style="padding:0;justify-content:flex-start;display:flex;flex-direction:column;" onclick="toggleDropdown(this)">
 			<a style="padding-right:5px;justify-content:flex-start;">Our Dogs <span style="padding:0px 5px 0px 5px;justify-content:flex-start;" class="material-symbols-rounded">arrow_drop_down</span></a>
 			<div class="dropdown-links" style="position:relative;display:none;flex-direction:column;justify-content:flex-start;align-items:flex-start;" id="dl1">
@@ -76,6 +79,7 @@
 	<h1>Testimonials</h1>
 </div>
 <div class="testimonial-wrapper">
+<div class="testimonial-column">
 <div class="testimonial">
 <div class="testimonial-info">
 	<p>Our family's journey with Cascade Mountain Bernese Mountain Dogs began nearly 9 years ago when we welcomed one into our home. In our search for the ideal puppy, we visited several breeders, but our tour of Cascade stood out. It was evident that every animal there was cherished and well-cared for. Gerhardt's commitment to the well-being and happiness of his breeding stock is truly remarkable. His meticulous attention to detail ensures the safety and health of both mother and pups.  We were fortunate to be matched with the perfect puppy who quickly became an integral part of our family, forming a special bond with my boys. Words cannot adequately express our gratitude to Cascade for blessing us with such a wonderful companion. Brylie, our beloved dog, is now 9 years young and continues to bring joy and happiness into our lives.</p>
@@ -111,24 +115,95 @@
 	</div>
 </div>
 </div>
+</div>
+
+<div class="testimonial-column">
+<div class="testimonial">
+<div class="testimonial-info">
+	<p>When we were looking for a Bernese Mountain dog, we researched several breeders. We feel forunate
+to have found Cascade Mountain Kennel; they provided extensive information about their dogs,
+breeding practices and characteristics of the Bernes Mountain Dog. It is obvious that they take pride in
+their work and are concerned about the dogs’ welfare. Mila, our current Berner is our 3 rd dog from
+Cascade. She joined our family when she was 12 weeks old and she is such a fun, loyal and loving dog.
+What stands out for us is how well-socialized she was when we picked her up. She is careful around our
+small grandchildren, gets along with other dogs and is sweet and curious about other animals including
+cats. Whenever we travel, Mila goes back to the farm for boarding. She loves palying and hanging out
+with the other Berners and we know that she is well taken care of while we are away.
+We trust Gerhard and his staff, he is an experienced and responsible breeder and highly recommend
+him to anyone who is thinking about adopting a Berner.</p>
+</div>
+<div class="testimonial-slideshow">
+	<div class="test-slides" style="" id="test-slides3">
+		<img src="images/test3-1.jpg"  id="test3img1" style="display:flex;">
+	</div>
+</div>
+</div>
+<div class="testimonial" style="max-width:550px;flex-grow:1;">
+<div class="testimonial-info">
+	<p>We’ve known Gerhard and his family at Cascade Mountain Kennels since
+2014 when we adopted our first Berner, Ketchum. Cascade Mountain Kennels
+came highly recommended, and they matched us with the perfect new family
+member. Ketchum had the best temperament and was so great with his human
+siblings that later came along. We recently welcomed Hailey to the
+family, and while she has big shoes to fill, she’s such a sweetie and
+adapting well. Highly recommend Gerhard and Cascade Mountain Kennels.</p>
+	</div>
+<div class="testimonial-slideshow">
+	<div class="test-arrows">
+		<span onclick="testSlideshow('test-slides4', -1)" class="material-symbols-outlined">chevron_left</span>
+		<span onclick="testSlideshow('test-slides4', 1)" class="material-symbols-outlined">chevron_right</span>
+	</div>
+	<div class="test-slides"  id="test-slides4">
+	<p>0</p>
+		<img src="images/test4-1.jpg" id="test4img1">
+		<img src="images/test4-2.jpg" id="test4img2">
+		<img src="images/test4-3.jpg" id="test4img3">
+		<img src="images/test4-4.jpg" id="test4img4">
+		<img src="images/test4-5.jpg" id="test4img5"
+	</div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div class="testimonial-column">
 <div class="testimonial">
 <div class="testimonial-info">
 	<p>Our family's journey with Cascade Mountain Bernese Mountain Dogs began nearly 9 years ago when we welcomed one into our home. In our search for the ideal puppy, we visited several breeders, but our tour of Cascade stood out. It was evident that every animal there was cherished and well-cared for. Gerhardt's commitment to the well-being and happiness of his breeding stock is truly remarkable. His meticulous attention to detail ensures the safety and health of both mother and pups.  We were fortunate to be matched with the perfect puppy who quickly became an integral part of our family, forming a special bond with my boys. Words cannot adequately express our gratitude to Cascade for blessing us with such a wonderful companion. Brylie, our beloved dog, is now 9 years young and continues to bring joy and happiness into our lives.</p>
 	</div>
 <div class="testimonial-slideshow">
 	<div class="test-arrows">
-		<span onclick="testSlideshow('test-slides3', -1)" class="material-symbols-outlined">chevron_left</span>
-		<span onclick="testSlideshow('test-slides3', 1)" class="material-symbols-outlined">chevron_right</span>
+		<span onclick="testSlideshow('test-slides5', -1)" class="material-symbols-outlined">chevron_left</span>
+		<span onclick="testSlideshow('test-slides5', 1)" class="material-symbols-outlined">chevron_right</span>
 	</div>
-	<div class="test-slides" style="" id="test-slides3">
+	<div class="test-slides" style="" id="test-slides5">
 	<p>0</p>
-		<img src="images/test1.jpg" id="test1img1">
-		<img src="images/test1-2.jpg"  id="test1img2">
+		<img src="images/test5.jpg" id="test5img1">
+		<img src="images/test5-2.jpg"  id="test5img2">
 	</div>
 </div>
 </div>
 
-
+<div class="testimonial">
+<div class="testimonial-info">
+	<p>We are presently raising our second Cascade Mountain Bernese Mountain Dog puppy.   Our first arrived 10 yrs ago and lived a long, healthy life, until old age caught up with her.  Gerhard knew our family style and needs, and selected another super puppy for us this second time around.  Close friends of ours have had 2 Bernese from Gerhard as well, and they have been excellent.   I like best that the puppy comes with such a sound mind - they are a balanced personality after the farm-life rearing they have in the early weeks.  Both of our pups have adapted well to being part of the family, equally at peace in the forest, at the barn and in our urban city dwelling.   First two photos are Twig.   Second two are Fern.</p>
+	</div>
+<div class="testimonial-slideshow">
+	<div class="test-arrows">
+		<span onclick="testSlideshow('test-slides6', -1)" class="material-symbols-outlined">chevron_left</span>
+		<span onclick="testSlideshow('test-slides6', 1)" class="material-symbols-outlined">chevron_right</span>
+	</div>
+	<div class="test-slides" style="" id="test-slides6">
+	<p>0</p>
+		<img src="images/test6img-1.jpg" id="test6img1">
+		<img src="images/test6img-2.jpg" id="test6img2">
+		<img src="images/test6img-3.jpg" id="test6img3">
+		<img src="images/test6img-4.jpg" id="test6img4">
+	</div>
+</div>
+</div>
 </div>
 </div>
 </body>

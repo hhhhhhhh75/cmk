@@ -136,6 +136,8 @@ function toggleMenuOn(){
 	document.getElementById("side-menu").style.marginRight="0px";
 }
 
+
+
 function toggleMenuOff(){
 	document.getElementById("side-menu").style.display="flex";
 	document.body.style.overflowY = "auto"
@@ -223,4 +225,49 @@ function testSlideshow(s, num){
 	
 
 	currents[0].innerHTML = current;
+}
+
+function toggleMenu() {
+	if (document.body.style.overflowY === "hidden"){
+		document.getElementById("side-menu").style.display="flex";
+	document.body.style.overflowY = "auto"
+	document.getElementById("side-menu").style.marginRight="-100%";
+
+	
+	const drop2 = document.getElementById("dl2");
+	const d = document.getElementById("d2")
+	dropArrow2 = d.querySelectorAll("span");
+	
+	const drop1 = document.getElementById("dl1");
+	const e = document.getElementById("d1")
+	dropArrow1 = e.querySelectorAll("span");
+	
+	
+	drop2.style.display = "none";
+    dropArrow2[0].style.transform = "rotate(0deg)";
+		
+	drop1.style.display = "none";	
+	dropArrow1[0].style.transform = "rotate(0deg)";
+	}
+	else{
+		document.getElementById("side-menu").style.display="flex";
+		document.body.style.overflowY = "hidden"
+		document.getElementById("side-menu").style.marginRight="0px";
+	}
+}
+
+function xAnimation() {
+	if (document.body.style.overflowY === "hidden"){
+		document.getElementById("bar3").style.marginTop = "0px";
+		document.getElementById("bar1").style.transform = "rotate(0deg)";
+		document.getElementById("bar2").style.backgroundColor = "white";
+		document.getElementById("bar3").style.transform = "rotate(0deg)";
+	}
+	
+	else{
+		document.getElementById("bar3").style.marginTop = "-20px";
+		document.getElementById("bar1").style.transform = "rotate(45deg)";
+		document.getElementById("bar2").style.backgroundColor = "transparent";
+		document.getElementById("bar3").style.transform = "rotate(-45deg)";
+	}
 }
