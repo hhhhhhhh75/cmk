@@ -262,7 +262,7 @@ justify-content:space-between;
 
 .page-header{
 	padding-top:70px;
-	height:200px;
+	height:400px;
 	background-image:url("dog.jpg");
 	background-size:100%;
 	background-attachment: fixed;
@@ -418,6 +418,14 @@ textarea {
 	padding:10px;
 	border:solid 2px #d6d6d6;
 	resize: none;
+	
+}
+
+select {
+	font-family:Bask;
+	font-size:20px;
+	padding:10px;
+	border:solid 2px #d6d6d6;
 	
 }
 

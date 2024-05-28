@@ -17,8 +17,8 @@
 		<div class="dropdown">
 			<a style="padding-right:5px;" id="dropdown-link">Our Dogs <span style="padding:0px 5px 0px 5px;" class="material-symbols-rounded">arrow_drop_down</span></a>
 			<div class="dropdown-links">
-				<a href="puppies.html">Our Puppies</a>
-				<a href="litters.html">Our Litters</a>
+				<a href="puppies.html#males">Our Males</a>
+				<a href="puppies.html#females">Our Females</a>
 				<a href="champions.html">Our Champions</a>
 			</div>
 		</div>
@@ -32,7 +32,7 @@
 		</div>
 		<a href="adoption.html">Adoption</a>		
 		<a href="testimonials.html">Testimonials</a>
-		<a href="contact.html">Contact</a>
+		<a href="links.html">Links</a>
 	</div>
 	
 	<div id="hamburger-wrapper" onclick="xAnimation();toggleMenu()" style="z-index: 20; right:20px; position:absolute;align-self:center;">
@@ -45,9 +45,9 @@
 		<div class="dropdown" id="d1" style="padding:0;justify-content:flex-start;display:flex;flex-direction:column;" onclick="toggleDropdown(this)">
 			<a style="padding-right:5px;justify-content:flex-start;">Our Dogs <span style="padding:0px 5px 0px 5px;justify-content:flex-start;" class="material-symbols-rounded">arrow_drop_down</span></a>
 			<div class="dropdown-links" style="position:relative;display:none;flex-direction:column;justify-content:flex-start;align-items:flex-start;" id="dl1">
-				<a style="font-size:35px;padding:0;" href="puppies.html">Our Puppies</a>
+				<a style="font-size:35px;padding:0;" href="puppies.html#males">Our Males</a>
 				<hr style="width:100%; opacity:0.2;">
-				<a style="font-size:35px;padding:0;" href="litters.html">Our Litters</a>
+				<a style="font-size:35px;padding:0;" href="puppies.html#females">Our Females</a>
 				<hr style="width:100%; opacity:0.2;">
 				<a style="font-size:35px;padding:0;" href="champions.html">Our Champions</a>
 			</div>
@@ -71,7 +71,7 @@
 	
 		<a href="testimonials.html">Testimonials</a>
 		<hr style="width:100%; opacity:0.2;">
-		<a href="contact.html">Contact</a>
+		<a href="links.html">Links</a>
 	</div>
 	</div>
 </nav>
@@ -87,6 +87,7 @@
 			</div>
 	</div>
 		<div class="contact-form">
+			<h2 style="padding-bottom:10px;">Adoption Form</h2>
 			<form method="post" action="form.php">
 				<div class="name" style="display:flex;flex-direction:row;;width:100%;justify-content:space-between;">
 					<div style="display:flex;flex-direction:column;width:calc(50% - 7.5px)">
@@ -112,10 +113,39 @@
 						<input type="text" id="email" name="email" placeholder="johndoe@website.ca">
 					</div>
 				</div>
+				
+				
+				<div style="display:flex;flex-direction:column;">
+					<label for="address">Male or Female Dog?</label>
+						<select name="gender" id="gender">
+							<option value="">Please choose an option</option>
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					
+				</div>
+				
+				<div style="display:flex;flex-direction:column;">
+					<label for="address">What will your Dog be used for?</label>
+						<select name="gender" id="gender">
+							<option value="">Please choose an option</option>
+							<option value="male">For show</option>
+							<option value="female">For a pet</option>
+							<option value="female">For breeding</option>
+						</select>
+					
+				</div>
+				
 				<div style="display:flex;flex-direction:column;">
 					<label for="fname">About You</label>
-					<textarea id="about" name="about" rows="6" placeholder="Eg. My name is John Doe. I have wanted a dog since I was a child..."></textarea>
+					<textarea id="about" name="about" rows="2" placeholder="Eg. My name is John Doe. I have wanted a dog since I was a child..."></textarea>
 				</div>
+				
+				<div style="display:flex;flex-direction:column;">
+					<label for="address">Experience with Dogs</label>
+					<textarea id="about" name="about" rows="2" placeholder="I have had two dogs in my lifetime..."></textarea>
+				</div>
+				
 				<input type="submit" style="background-color:white;color:black;font-family:Bask">
 			</form>
 		</div>
