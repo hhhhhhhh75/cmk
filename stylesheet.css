@@ -960,6 +960,16 @@ height:500px;
 		border:none;
 	}
 	
+	.footer-links-div a{
+		margin-top:10px;
+		margin-bottom:10px;
+	}
+	
+	.copyright {
+		text-align:left;
+		font-size:15px;
+	}
+	
 	.footer-contact {
 		align-items:flex-start;
 	}
