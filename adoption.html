@@ -75,15 +75,16 @@
 	</div>
 	</div>
 </nav>
-<div class="page-header" style="background-image:url('images/image0.jpeg'); background-position:0% 75%;">
+<div class="page-header" style="background-image:url('images/image2.jpeg'); background-position:0% 47%;">
 	<h1>Adoption</h1>
 </div>
 <div class="main-content">
 <div class="contact-wrapper">
 	<div class="image-text" style="padding:0;">
-		<div class="" style="padding-right:50px">
-			<h2>Paragraph Heading</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus volutpat, est tempor vulputate scelerisque, eros massa rhoncus risus, eget tincidunt enim nunc at ex. Suspendisse in dictum orci. Aenean ac mattis lacus, sed vulputate urna. Donec iaculis porta molestie. In eu metus vel mauris lacinia dictum ac vitae nunc. Maecenas eu dui nec arcu pellentesque sodales sit amet ac mi. In luctus consequat accumsan.</p>
+		<div class="adoption-left" style="">
+			<h2>Adoption</h2>
+			<p>Please fill out the Adoption Form with as much detail as possible. We use this information to make the best match possible! Please allow 3 days for a response. Sometimes our forms do go missing. Feel free to follow up with an email to: <a href="mailto:info@cascademountainkennels.com" style="color:white;">info@cascademountainkennels.com</a> or call us at <a href="tel:6043092229" style="color:white;">604-309-2229</a>.</p>
+			<img src="images/puppyinhay.jpg" style="width:100%;margin-top:20px;">
 			</div>
 	</div>
 		<div class="contact-form">
@@ -116,22 +117,23 @@
 				
 				
 				<div style="display:flex;flex-direction:column;">
-					<label for="address">Male or Female Dog?</label>
+					<label for="gender">Male or Female Dog?</label>
 						<select name="gender" id="gender">
 							<option value="">Please choose an option</option>
-							<option value="male">Male</option>
-							<option value="female">Female</option>
+							<option value="Male">Male</option>
+							<option value="Female">Female</option>
+							<option value="No Preference">No Preference</option>
 						</select>
 					
 				</div>
 				
 				<div style="display:flex;flex-direction:column;">
-					<label for="address">What will your Dog be used for?</label>
-						<select name="gender" id="gender">
+					<label for="purpose">What will your Dog be used for?</label>
+						<select name="purpose" id="purpose">
 							<option value="">Please choose an option</option>
-							<option value="male">For show</option>
-							<option value="female">For a pet</option>
-							<option value="female">For breeding</option>
+							<option value="For show">For show</option>
+							<option value="For a pet">For a pet</option>
+							<option value="For breeding">For breeding</option>
 						</select>
 					
 				</div>
@@ -142,11 +144,21 @@
 				</div>
 				
 				<div style="display:flex;flex-direction:column;">
-					<label for="address">Experience with Dogs</label>
-					<textarea id="about" name="about" rows="2" placeholder="I have had two dogs in my lifetime..."></textarea>
+					<label for="experience">Experience with Dogs</label>
+					<textarea id="experience" name="experience" rows="2" placeholder="I have had two dogs in my lifetime..."></textarea>
 				</div>
 				
-				<input type="submit" style="background-color:white;color:black;font-family:Bask">
+				<div style="display:flex;flex-direction:column;">
+					<label for="ready">When would you be ready for a puppy?</label>
+					<input type="text" id="ready" name="ready" placeholder="As soon as possible...">
+				</div>
+				
+				<div style="display:flex;flex-direction:column;">
+					<label for="ready">Are you open to rescue, foster or adopt an adult Bernese Mountain Dog?</label>
+					<input type="text" id="adopt" name="adopt" placeholder="Yeah I would love to...">
+				</div>
+				
+				<input type="submit" style="background-color:white;color:black;font-family:Bask;">
 			</form>
 		</div>
 </div>

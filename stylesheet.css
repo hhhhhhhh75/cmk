@@ -63,7 +63,7 @@ transition:all 0.2s;
 }
 
 
-.links a {
+.links a, .footer-links-div a, .footer-contact a {
 	font-size:30px;
 	text-decoration:none;
 	color:white;
@@ -87,7 +87,7 @@ transition:all 0.2s;
 	
 }
 
-.links a:hover {
+.links a:hover, .footer-links-div a:hover, .footer-contact a:hover {
 	
 	transition:all 0.2s;
 	background-color:rgba(0, 0, 0, 0.6);
@@ -202,7 +202,8 @@ transition:all 0.2s;
 }
 
 .slide-info h1 {
-	font-size:210px;
+	font-size:125px;
+	line-height:130px;
 }
 
 .slide-info {
@@ -214,26 +215,31 @@ transition:all 0.2s;
 }
 
 #slide1 {
-	background-image:url("images/dog2.jpg");
+	background-image:url("images/test4-2.jpg");
 	display:none;
 }
 
 #slide2 {
-	background-image:url("images/dog3.jpg");
+	background-image:url("images/image2.jpeg");
 	display:none;
 }
 
 #slide3 {
-	background-image:url("images/dog4.jpg");
+	background-image:url("images/test4-1.jpg");
+	background-position:20% 35%;
 	display:none;
 }
 
 #slide4 {
-	background-image:url("images/dog5.jpg");
+	background-image:url("images/test4-5.jpg");
 	display:none;
+	background-position:20% 50%;
 }
 
-
+#slide5 {
+	background-image:url("images/bernpuppy.jpg");
+	display:none;
+}
 
 
 .main-content {
@@ -389,7 +395,7 @@ form {
 	display:flex;
 	flex-direction:column;
 	gap:15px;
-	width:650px;
+	width:800px;
 }
 
 label {
@@ -484,6 +490,10 @@ select {
 	  flex-wrap:wrap;
 	  gap:15px;
   }
+  
+.adoption-left {
+	padding-right:50px;
+}
   
   
 #side-menu {
@@ -720,6 +730,52 @@ select {
 	background-color:white;
 }
 
+footer {
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between;
+	align-items:center;
+	padding:50px;
+	color:black;
+	background-color:white;
+}
+.footer-links-div {
+	display:flex;
+	flex-direction:column;
+	padding-right:25px;
+	border-right:solid 1px black;
+}
+
+.footer-links-div a, .footer-contact a {
+	color:black;
+	font-size:23px;
+	margin-top:15px;
+	margin-left:0px;
+	margin-right:0px;
+	
+}
+
+.copyright {
+	font-size:23px;
+}
+
+.footer-contact a {
+	margin-bottom:0px;
+}
+
+.footer-contact {
+	display:flex;
+	flex-direction:column;
+	align-items:flex-end;
+	justify-content:center;
+}
+
+.footer-links {
+	gap:25px;
+	display:flex;
+	flex-direction:row;
+}
+
 #hamburger-wrapper{
 	display:none;
 }
@@ -746,6 +802,32 @@ select {
 }
 
 @media only screen and (max-width: 1000px) {
+	.footer-links {
+		gap:20px;
+		flex-wrap:no-wrap;
+	}
+	
+	.footer-links a, .copyright , 	.footer-contact a {
+		font-size:20px;
+	}
+	
+	
+	.copyright {
+		text-align:center;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.footer-links {
+		flex-wrap:wrap;
+	}
+}
+
+@media only screen and (max-width: 1000px) {
+	.adoption-left {
+	padding-right:0px;
+}
+	
   #hamburger-wrapper{
 	display:block;
 }
@@ -771,16 +853,21 @@ select {
   }
   
   .slide-info h1 {
-	  font-size:150px;
+	  font-size:100px;
 	  line-height:normal;
+  }
+  
+  .slide {
+	  align-items:flex-start
   }
   
   .slide-info {
 	
 	  display:flex;
 	  flex-direction:column;
-	  justify-content:center;
+	  justify-content:flex-start;
 	  align-items:flex-start;
+	  margin-left:15%;
   }
   
   .question {
@@ -842,7 +929,7 @@ select {
 display:flex;
 flex-direction:column;
 align-items:center;
-flex-grow:1;
+width:565px;
 height:500px;
 
 }
@@ -856,6 +943,27 @@ height:500px;
 
 
 @media only screen and (max-width: 700px) {
+	footer{
+		flex-direction:column;
+		gap:30px;
+		align-items:flex-start;
+		padding:20px;
+	}
+	
+	.footer-links {
+		flex-direction:column;
+		gap:0px;
+		
+	}
+	
+	.footer-links-div {
+		border:none;
+	}
+	
+	.footer-contact {
+		align-items:flex-start;
+	}
+	
 	.box-button {
 	margin-top:10px;
 	font-size:18px;
@@ -905,7 +1013,7 @@ height:500px;
 	}
 	
   .slide-info h1 {
-	  font-size:110px;
+	  font-size:90px;
   }
   
    .header, .slide {
@@ -1011,6 +1119,10 @@ height:500px;
  .test-slides, .testimonial img {
 	 height:300px;
  }
+ 
+ #long {
+	 font-size:53px;
+ }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1019,7 +1131,9 @@ height:500px;
   }
   
    .slide-info h1 {
-	  font-size:75px;
+	  font-size:65px;
+	  line-height:65px;
+	 
   }
   
   button {

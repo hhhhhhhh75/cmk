@@ -1,6 +1,6 @@
 function slide(n, s) {
-	var slides = ["images/dog.jpeg", "images/dog2.jpg", "images/dog3.jpg", "images/dog4.jpg", "images/dog5.jpg"];
-	var slidesid = ["slide1", "slide2", "slide3", "slide4", "slide5"];
+	var slides = ["images/dog.jpeg", "images/dog2.jpg", "images/dog3.jpg", "images/dog4.jpg", "images/dog5.jpg", ""];
+	var slidesid = ["slide0" ,"slide1", "slide2", "slide3", "slide4", "slide5"];
 	var current = 0;
 	
 	
