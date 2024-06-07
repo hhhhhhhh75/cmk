@@ -132,7 +132,7 @@ hr {
 }
 
 .header {
-	height:650px;
+	height:950px;
 
 	background-repeat:no-repeat;
 	background-size:100%;
@@ -174,7 +174,7 @@ hr {
 }
 
 .slider-arrows span {
-	padding:280px 0px;
+	padding:425px 0px;
 	font-size:60px;
 	color:rgba(255, 255, 255, 0.8);
 	position:relative;
@@ -191,7 +191,7 @@ hr {
 .slides-wrapper {
 	position:absolute;
 	width:100%;
-	height:600px;
+	height:900px;
 }
 
 .slide { 
@@ -218,6 +218,7 @@ hr {
 
 #slide0 {
 	background-image:url("images/dog.jpeg");
+	background-position:100% 25%;
 }
 
 #slide1 {
@@ -274,7 +275,7 @@ justify-content:space-between;
 
 .page-header{
 	padding-top:70px;
-	height:400px;
+	height:550px;
 	background-image:url("dog.jpg");
 	background-size:100%;
 	background-attachment: fixed;
@@ -500,7 +501,20 @@ select {
 .adoption-left {
 	padding-right:50px;
 }
-  
+
+.boarding-wrapper {
+	display:flex;
+	flex-direction:row;
+}
+ 
+ #boarding-slides {
+	 justify-content:flex-start;
+ }
+ 
+ #boarding-slides img {
+	 height:500px;
+	 margin-top:-50px;
+ }
   
 #side-menu {
 	border-left:solid 2px white;
@@ -758,8 +772,8 @@ footer {
 	justify-content:space-between;
 	align-items:center;
 	padding:50px;
-	color:black;
-	background-color:white;
+	color:white;
+	background-color:black;
 }
 .footer-links-div {
 	display:flex;
@@ -769,7 +783,7 @@ footer {
 }
 
 .footer-links-div a, .footer-contact a {
-	color:black;
+	color:white;
 	font-size:23px;
 	margin-top:15px;
 	margin-left:0px;
