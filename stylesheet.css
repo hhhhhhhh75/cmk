@@ -63,6 +63,11 @@ transition:all 0.2s;
 }
 
 
+.boarding-slideshow {
+	min-width:700px;
+	margin-left:50px;
+}
+
 .links a, .footer-links-div a, .footer-contact a {
 	font-size:30px;
 	text-decoration:none;
@@ -603,18 +608,19 @@ select {
 .puppy-slideshow {
 	display:flex;
 	flex-direction:column;
-	max-width:500px;
+	
 	width:100%;
 	justify-content:center;
 	align-items:center;
 	height:100%;
-	max-height:450px;
+	max-height:600px;
 }
 
 .puppy-slides img{
 	display:none;
 	width: 100%;
     height: 100%;
+	object-position: 75% 50%;
     object-fit: cover;
 }
 
@@ -622,11 +628,11 @@ select {
 	display:flex;
 	justify-content:flex-start;
 	width:100%;
-	height:450px;
+	height:500px;
 }
 
 .puppy-arrows {
-	width:25%;
+	width:40%;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-between;
@@ -646,7 +652,7 @@ select {
 }
 
 .puppy-info{
-	width:50%;
+	
 	padding:15px
 }
 
@@ -704,14 +710,14 @@ select {
 }
 
 .puppy {
-
+	margin-bottom:50px;
 	border:solid 2px white;
 	width:100%;
 	display:flex;
-	flex-direction:row;
+	flex-direction:column;
 	justify-content:space-between;
-	gap:20px;
-	height:450px;
+
+
 	width: calc(100% - 24px);
 }
 
@@ -865,6 +871,21 @@ footer {
 	.footer-links {
 		flex-wrap:wrap;
 	}
+	.boarding-wrapper {
+		display:flex;
+		flex-direction:column;
+	}
+	
+	.boarding-slideshow {
+		margin-top:50px;
+		margin-left:0px;
+	}
+	.puppies-column {
+		width:100%;
+	}
+	.puppy-arrows {
+		width:70%;
+	}
 }
 
 @media only screen and (max-width: 1000px) {
@@ -987,11 +1008,28 @@ height:500px;
 
 
 @media only screen and (max-width: 700px) {
+	.puppy {
+		margin-bottom:20px;
+	}
+	
 	footer{
 		flex-direction:column;
 		gap:30px;
 		align-items:flex-start;
 		padding:20px;
+	}
+	
+	#boarding-slides img {
+		box-sizing:border-box;
+		margin-top:-97px;
+		height:494px;
+		
+	}
+	
+	.boarding-slideshow {
+		min-width:100%;
+		margin-left:0px;
+		margin-top:20px;
 	}
 	
 	.champion {
