@@ -910,11 +910,11 @@ footer {
   }
   
   .header, .slide {
-	  height:450px;
+	  height:700px;
   }
   
   .slider-arrows span {
-	  padding:180px 0px;
+	  padding:310px 0px;
   }
   
   .slide-info h1 {
@@ -923,7 +923,7 @@ footer {
   }
   
   .slide {
-	  align-items:flex-start
+	  align-items:flex-start;
   }
   
   .slide-info {
@@ -1117,11 +1117,11 @@ height:500px;
   }
   
    .header, .slide {
-	  height:350px;
+	  height:500px;
   }
   
   .slider-arrows span {
-	  padding:120px 0px 70px 0px;
+	  padding:200px 0px 200px 0px;
   }
 
   .page-header{
