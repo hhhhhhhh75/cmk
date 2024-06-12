@@ -251,6 +251,8 @@ hr {
 #slide5 {
 	background-image:url("images/bernpuppy.jpg");
 	display:none;
+	background-size: cover;
+	background-position:55%;
 }
 
 
@@ -1121,7 +1123,11 @@ height:500px;
   }
   
   .slider-arrows span {
-	  padding:200px 0px 200px 0px;
+	  padding:210px 0px;
+  }
+  
+  .slider-arrows {
+	  height:500px;
   }
 
   .page-header{
@@ -1245,9 +1251,7 @@ height:500px;
 	font-size:18px;
   }
   
-  .slider-arrows {
-	 height:350px;
-  }
+ 
   
   .slider-arrows span {
 	  font-size:45px;
