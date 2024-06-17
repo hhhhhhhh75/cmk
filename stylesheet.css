@@ -559,8 +559,8 @@ select {
 
 .testimonial {
 	width:550px;
-	flex-grow:1;
-	height:100%;
+
+	justify-content:flex-end;
 	display:flex;
 	flex-direction:column-reverse;
 
@@ -756,10 +756,10 @@ select {
 
 .testimonial-column {
 	display:flex;
-	flex-direction:column;	
+	flex-direction:row;	
 	height:100%;
 	gap:50px;
-	flex-grow:1;
+	flex-wrap:wrap;
 }
 
 .bar {
@@ -1251,9 +1251,7 @@ height:500px;
 	font-size:18px;
   }
   
- 
-  
-  .slider-arrows span {
+ .slider-arrows span {
 	  font-size:45px;
   }
 }
