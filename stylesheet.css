@@ -227,12 +227,12 @@ hr {
 }
 
 #slide1 {
-	background-image:url("images/test4-2.jpg");
+	background-image:url("images/boarding-header.jpg");
 	display:none;
 }
 
 #slide2 {
-	background-image:url("images/image2.jpeg");
+	background-image:url("images/bernpuppy.jpg");
 	display:none;
 }
 
@@ -249,7 +249,7 @@ hr {
 }
 
 #slide5 {
-	background-image:url("images/bernpuppy.jpg");
+	background-image:url("images/image2.jpeg");
 	display:none;
 	background-size: cover;
 	background-position:55%;
@@ -996,8 +996,8 @@ footer {
 display:flex;
 flex-direction:column;
 align-items:center;
-width:565px;
-height:500px;
+width:31%;
+height:450px;
 
 }
 
