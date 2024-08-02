@@ -654,7 +654,7 @@ select {
 }
 
 .puppy-info{
-	
+	box-sizing: border-box;
 	padding:15px
 }
 
@@ -1170,7 +1170,7 @@ height:450px;
   
   .puppy {
 	  display:flex;
-	  flex-wrap:wrap;
+
 	  height:100%;
 	  width:calc(100% - 3px);
   }
